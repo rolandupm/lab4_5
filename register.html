@@ -5,18 +5,31 @@
 	<title>
 		Login Page
 	</title>
+	<link rel="stylesheet" type="text/css" href="register.css">
 </head>
 	<body>
 			<div class="container">
 				<form action="profile.html">
 					  Name <input type="text" name="name"><br>
 					  Mail <input type="text" name="email"><br>
-					  Over 18 <input type="radio" default = "no" name="age"><br>
+					  Over 18 <input id = "radiobtn" type="radio" default = "no" name="age"><br>
 					  Password <input type="Password" name="email"><br>
-				 			 <input type="submit" value="Submit">
-
+					  <p>
+   				     	 <label class="btn" for="modal-1">Done</label>
+   				 	 </p>
 				</form>
 			</div>
-		<p>Click the "Submit" button and the form-data will be sent to a page on the server called "profile.html".</p>
+
+			<input class="modal-state" id="modal-1" type="checkbox" />
+			<div class="modal">
+			  <label class="modal__bg" for="modal-1"></label>
+			  <div class="modal__inner">
+			    <label class="modal__close" for="modal-1"></label>
+			    <h2>Laborator 3</h2>
+			    <p>Modal laborator nr 3</p>
+			  </div>
+			</div>
+
+		<p>Click the "Done" button and the form-data will be sent to a page on the server called "profile.html".</p>
 	</body>
 </html>
