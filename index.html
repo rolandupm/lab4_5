@@ -1,52 +1,181 @@
 <!DOCTYPE html>
 <html>
+	
 	<head>
+
 		<header>
 			<title>	laborator 2 </title>
 		</header>
-		<link rel="stylesheet" type="text/css" href="main.css">
-		<style>
-			
-		</style>
+		
+		<link rel="stylesheet" type="text/css" href="resources/css/main.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	</head>
-	<body style="background-color:#d2f2b3;"> 
+	<body> 
+        <div class="anim-object active" id="circle-object" style="animation: slide-in-blurred 1s cubic-bezier(0.23, 1, 0.32, 1) 0s 1 normal both running;"></div>
+		<nav>
+				<ul name = "topMenu" id = "topMenu">
+					<li class = "dropdown">
+						<a href="javascript:void(0)" class="dropbtn">Dynamic Menu</a>
+					    <div class="dropdown-content">
+						      <a href="html/register.html">Register</a>
+						      <a href="html/users.html">List Users</a>
+						      <a href="https://www.google.com">Google</a>
+					     </div>
+					 </li>
+					   <li class = "dropdown2">
+					    <a href="javascript:void(0)" class="dropbtn">Lazy?</a>
+					    <div class="dropdown-content">
+						      <a href="#parallax2">South Park</a>
+						      <a href="#parallax3">King of the hill</a>
+						      <a href="#parallax4">The Simpsons</a>
+						      <a href="#parallax5">Futurama</a>
+						      <a href="#parallax6">Familly Guy</a>
+						      <a href="#parallax7">Rick and morty</a>
+						      <a href="#parallax8">American Dad</a>
+						      <a href="#parallax9">SpongeBob SquarePants</a>
 
-	
-		<ul name = "topMenu">
-			<li class = "dropdown">
-				<a href="javascript:void(0)" class="dropbtn">Dynamic Menu</a>
-			    <div class="dropdown-content">
-				      <a href="register.html">Register</a>
-				      <a href="users.html">List Users</a>
-				      <a href="https://www.google.com">Google</a>
-			     </div>
-			  </li>
-			  <li><a href="index.html">Home</a></li>
-			  <li><a href="contact.html">Contact</a></li>
-			  <li><a href="about.html">About</a></li>
-			  <li><a href="register.html">Register</a></li>
-			  <li><a href="users.html">List Users</a></li>
-			  <li><a href="https://www.google.com">Google search</a></li>
-		</ul>
-		<div class = "photo">
-			<div class="grid-container">
-				  <div class="grid-item"><img class = "photo" src="simpsons.jpg" alt="simpsons" width="auto" height="auto"> </div>
-				  <div class="grid-item"><img class = "photo" src="rickmorty.jpg" alt="rickmorty" width="auto" height="auto"></div>
-				  <div class="grid-item"><img class = "photo" src="spongbob.jpg" alt="spongbob" width="auto" height="auto"></div>  
-				  <div class="grid-item"><img class = "photo" src="hill.jpg" alt="hill" width="auto" height="auto"></div>
-				  <div class="grid-item"><img class = "photo" src="southpark.jpg" alt="southpark" width="auto" height="auto"></div>
-				  <div class="grid-item"><img class = "photo" src="futurama.jpg" alt="futurama" width="auto" height="auto"></div>  
-				  <div class="grid-item"><img class = "photo" src="family-guy.jpg" alt="family-guy" width="auto" height="auto"></div>
-				  <div class="grid-item"><img class = "photo" src="americandad.jpg" alt="americandad" width="auto" height="auto"></div>
-				  <div class="grid-item"><img class = "photo" src="ffamily.png" alt="ffamily" width="auto" height="auto"></div>  
+					     </div>
+					  </li>
+					  <li><a href="#" id="anim">Aniamtion</a></li>
+					  <li><a href="index.html">Home</a></li>
+					  <li><a href="html/register.html">Register</a></li>
+					  <li><a href="html/users.html">List Users</a></li>
+					  <li><a href="https://www.google.com">Google search</a></li>
+				</ul>
+		</nav>
+		<!--	<p class="animatedText">Animated Text</p> !-->
+		<div class="parallax1" id = "parallax1">
+		   	<div class="caption">
+			    <span class="border">Best animated series</span>
+			</div>
+		</div>	
+
+		<div style="height:30%,color:white;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+			<p class="extra" style = "text-align:center; color:white; font-size:160%;" > Even if your favorite cartoon did not make the list, worry not. <br> No sane adult should be watching cartoons anyway...</p>
+			<p class="notExtra" style = "text-align:center; color:white; font-size:160%;" > Some of the best cartoons ever made ... </p>
+		</div>
+
+		<div class="parallax2" id = "parallax2">
+
+		</div>
+		<div style="height:30%,color:white;background-color:#282E34;padding:30px 80px;text-align: justify;">
+			<p style = "text-align:center; color:white; font-size:250%;"> <strong>South Park</strong></p>
+			<div style = "font-size:120%; color:white;">
+				<b>No. of episodes: 289 </b>
+				<p class="extra"><br>Program creators: Trey Parker, Matt Stone </b></p>
+				<a class="extra" href="http://southpark.cc.com" style = "font-size:120%; color:white;"> Watch it online at: http://southpark.cc.com </a></li>
+				<br>
+				<a class="extra" href="https://en.wikipedia.org/wiki/South_Park" style = "font-size:120%; color:white;"> Wiki link for the reader type ...</a></li>
+			</div>
+		</div>
+		
+		<div class="parallax3" id = "parallax3">
+
+		</div>
+
+		<div style="height:30%,color:white;background-color:#282E34;padding:30px 80px;text-align: justify;">
+			<p style = "text-align:center; color:white; font-size:250%;"> <strong>King of the hill</strong></p>
+			<div style = "font-size:120%; color:white;">
+				<p class="extra">"Don`t let the poor graphics fool you , it`s still one of the best cartoons ever made..."</p>
+				<br>
+				<b>No. of episodes: 259 </b>
+				<br>
+				<a class="extra" href="https://www.watchcartoononline.com/anime/king-of-the-hill" style = "font-size:120%; color:white;"> Watch it online</a></li>
+				<br>
+				<a class="extra" href="https://en.wikipedia.org/wiki/King_of_the_Hill" style = "font-size:120%; color:white;"> Wiki link for the reader type ...</a></li>
 			</div>
 		</div>
 
-		<footer>
-			<strong>
-				
-			</strong>
-		</footer>
+		<div class="parallax4" id = "parallax4">
+
+		</div>
+		<div style="height:30%,color:white;background-color:#282E34;padding:30px 80px;text-align: justify;">
+			<p style = "text-align:center; color:white; font-size:250%;"> <strong>The Simpsons</strong></p>
+			<div style = "font-size:120%; color:white;">
+				<p class="extra">Best of the best</p>
+				<br>
+				<b>No. of episodes: 642! </b>
+				<br>
+				<a class="extra" href="https://www.watchcartoononline.com/anime/the-simpsons" style = "font-size:120%; color:white;"> Watch it online</a></li>
+				<br>
+				<a class="extra" href="https://en.wikipedia.org/wiki/The_Simpsons" style = "font-size:120%; color:white;"> Wiki link for the reader type ...</a></li>
+			</div>
+		</div>
+		<div class="parallax5" id = "parallax5">
+
+		</div>
+		<div style="height:30%,color:white;background-color:#282E34;padding:30px 80px;text-align: justify;">
+			<p style = "text-align:center; color:white; font-size:250%;"> <strong>Futurama</strong></p>
+			<div style = "font-size:120%; color:white;">
+				<p class="extra">"Another masterpiece from the creators of the simpsons"</p>
+				<br>
+				<b>No. of episodes: 140 </b>
+				<br>
+				<a class="extra" href="https://www.watchcartoononline.com/anime/futurama-season-1" style = "font-size:120%; color:white;"> Watch it online</a></li>
+				<br>
+				<a class="extra" href="https://en.wikipedia.org/wiki/Futurama" style = "font-size:120%; color:white;"> Wiki link for the reader type ...</a></li>
+			</div>
+		</div>
+
+		<div class="parallax6" id = "parallax6">
+
+		</div>
+		<div style="height:30%,color:white;background-color:#282E34;padding:30px 80px;text-align: justify;">
+			<p style = "text-align:center; color:white; font-size:250%;"> <strong>Familly Guy</strong></p>
+			<div style = "font-size:120%; color:white;">
+				<p class="extra">"Sick, twisted and politically incorrect" </p>
+				<br>
+				<b> No. of episodes: 313  </b>
+				<br>
+				<a class="extra" href="https://www.watchcartoononline.com/anime/family-guy-season-1" style = "font-size:120%; color:white;"> Watch it online</a></li>
+				<br>
+				<a class="extra" href="https://en.wikipedia.org/wiki/Family_Guy" style = "font-size:120%; color:white;"> Wiki link for the reader type ...</a></li>
+			</div>
+		</div>
+
+		<div class="parallax7" id = "parallax7">
+
+		</div>
+
+		<div style="height:30%,color:white;background-color:#282E34;padding:30px 80px;text-align: justify;">
+			<p style = "text-align:center; color:white; font-size:250%;"> <strong>Rick and morty</strong></p>
+			<div style = "font-size:120%; color:white;">
+				<b>No. of episodes: 31 </b>
+				<br>
+				<a class="extra" href="https://www.cartoonsons.com/cartoons/view/id/rick-and-morty" style = "font-size:120%; color:white;"> Watch it online</a></li>
+				<br>
+				<a class="extra" href="https://en.wikipedia.org/wiki/Rick_and_Morty" style = "font-size:120%; color:white;"> Wiki link for the reader type ...</a></li>
+			</div>
+		</div>
+
+		<div class="parallax8" id = "parallax8">
+
+		</div>
+		<div style="height:30%,color:white;background-color:#282E34;padding:30px 80px;text-align: justify;">
+			<p style = "text-align:center; color:white; font-size:250%;"> <strong>American Dad</strong></p>
+			<div style = "font-size:120%; color:white;">
+				<b>No. of episodes: 247  </b>
+				<br>
+				<a class="extra" href="http://kisscartoons.co/cartoon/american-dad-season-10.html" style = "font-size:120%; color:white;"> Watch it online</a></li>
+				<br>
+				<a class="extra" href="https://en.wikipedia.org/wiki/American_Dad!" style = "font-size:120%; color:white;"> Wiki link for the reader type ...</a></li>
+			</div>
+		</div>
+		<div class="parallax9" id = "parallax9">
+		</div>
+		<div style="height:30%,color:white;background-color:#282E34;padding:30px 80px;text-align: justify;">
+			<p style = "text-align:center; color:white; font-size:250%;"> <strong>SpongeBob SquarePants</strong></p>
+			<div style = "font-size:120%; color:white;">
+				<p class="extra" >"If you did not grow up watching this , I feel sorry for you ..." </p>
+				<br>
+				<p><b> No. of episodes: 239  </b> </p>
+				<a class="extra" href="https://www.watchcartoononline.com/anime/spongebob-squarepants" style = "font-size:120%; color:white;"> Watch it online</a></li>
+				<br>
+				<a class="extra" href="https://en.wikipedia.org/wiki/SpongeBob_SquarePants" style = "font-size:120%; color:white;"> Wiki link for the reader type ...</a></li>
+			</div>
+		</div>
+		<script src="scripts/main.js"></script>
 		<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+		
 	</body>
 </html>
